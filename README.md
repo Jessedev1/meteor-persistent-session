@@ -137,6 +137,6 @@ To define the default type for session variables, set `persistent_session.defaul
 
 In any other case the `default_method` will fall back to `temporary`
 
-Original from:
-https://github.com/okgrow/meteor-persistent-session
-https://github.com/cult-of-coders/meteor-persistent-session
+Original from:  
+https://github.com/okgrow/meteor-persistent-session  
+https://github.com/cult-of-coders/meteor-persistent-session  

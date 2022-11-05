@@ -11,7 +11,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('0.9.1','1.12','2.3','2.8.0');
+  api.versionsFrom(['0.9.1','1.12','2.3','2.8.0']);
   api.use(['jquery', 'amplify', 'tracker', 'reactive-dict', 'session', 'underscore', 'ejson']);
   // If `accounts-base` is loaded, we have to make sure that this package is
   // loaded after `accounts-base` is, so we specify `weak: true` here

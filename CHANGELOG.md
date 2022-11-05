@@ -1,5 +1,9 @@
 ### Master [changes](https://github.com/okgrow/meteor-persistent-session/compare/v0.4.4...master)
 
+### [0.4.7]
+
+ * Fix - Resolve conflict with Meteor 2.8
+
 ### [0.4.6]
 
  * Fix - Resolve conflict with Meteor 2.8
