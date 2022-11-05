@@ -1,6 +1,3 @@
-This project is supported by Cult of Coders
-=======
-
 Purpose
 =======
 Make Meteor's `Session` object persist its values locally and across page
@@ -11,31 +8,10 @@ Uses [amplifyjs's store](http://amplifyjs.com/api/store/) library to save
 values in the browsers `localStorage`, falling back to other solutions if it's
 not available.
 
-Upgrading from 0.2.x to 0.3.x
-=============================
-
-The default behaviour of `Session.set` has been changed. `default_method` now
-defaults to `temporary` (as was mentioned in the docs), rather than
-`persistent`, which was what it was set to in the code.
-
-This means that to keep the behaviour the same, you should set `default_method`
-to `persistent`:
-
-`config/settings.json` file:
-```json
-{
-  "public": {
-    "persistent_session": {
-      "default_method": "persistent"
-    }
-  }
-}
-```
-
 Installation
 ============
 ```
-meteor add cultofcoders:persistent-session
+meteor add hormiga:persistent-session
 ```
 **Note:** To use persistent-session, your project must have Session already installed. You can add Meteor's Session package by `meteor add session`.
 
@@ -161,4 +137,6 @@ To define the default type for session variables, set `persistent_session.defaul
 
 In any other case the `default_method` will fall back to `temporary`
 
-Original from: https://github.com/okgrow/meteor-persistent-session
+Original from:
+https://github.com/okgrow/meteor-persistent-session
+https://github.com/cult-of-coders/meteor-persistent-session
