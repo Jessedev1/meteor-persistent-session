@@ -1,6 +1,6 @@
 Package.describe({
   name: 'hormiga:persistent-session',
-  version: '0.4.6',
+  version: '0.4.10',
   // Brief, one-line summary of the package.
   summary: 'Persistently store Session data on the client',
   // URL to the Git repository containing the source code for this package.

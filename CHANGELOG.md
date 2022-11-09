@@ -1,6 +1,11 @@
-### Master [changes](https://github.com/okgrow/meteor-persistent-session/compare/v0.4.4...master)
+### Master [changes](https://github.com/Hormiga-Meteor/meteor-persistent-session/compare/0.4.6...master)
 
-### [0.4.7]
+### [0.4.10](https://github.com/Hormiga-Meteor/meteor-persistent-session/compare/0.4.7...0.4.10)
+
+ * Fix - Resolve an issue to display the README.md at atmospherejs.com
+ * Add - New text about Meteor compatibility
+
+### [0.4.7](https://github.com/Hormiga-Meteor/meteor-persistent-session/compare/0.4.6...0.4.7)
 
  * Fix - Resolve conflict with Meteor 2.8
 

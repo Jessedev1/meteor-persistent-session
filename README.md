@@ -1,3 +1,10 @@
+Meteor version compatibility
+============
+2.8.0  
+2.3.0  
+1.12.0  
+0.9.1  
+
 Purpose
 =======
 Make Meteor's `Session` object persist its values locally and across page
@@ -56,7 +63,7 @@ Setting Session Values
 
 As of 3.3, you can use an object to set multiple values at once:
 
-```javasript
+```javascript
 Session.setPersistent({foo: "foo", bar: "bar"});
 ```
 
