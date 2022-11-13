@@ -1,4 +1,4 @@
-### Master [changes](https://github.com/Hormiga-Meteor/meteor-persistent-session/compare/0.4.6...master)
+### Master [changes](https://github.com/Hormiga-Meteor/meteor-persistent-session/compare/0.4.10...master)
 
 ### [0.4.10](https://github.com/Hormiga-Meteor/meteor-persistent-session/compare/0.4.7...0.4.10)
 
