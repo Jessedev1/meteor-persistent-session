@@ -192,7 +192,7 @@ Tinytest.add("multiple sessions don't effect each other (never cross the streams
 
 Tinytest.add("store gets persisted value", function(test) {
   var dictName = Random.id();
-  amplify.store(dictName + 'foo', "awesome");
+  localStorage.setItem(dictName + 'foo', "awesome");
 
   var TestSession = new PersistentSession(dictName);
   var result = TestSession.get('foo');
@@ -240,7 +240,7 @@ Tinytest.add("setDefaultPersistent only sets unset keys (gh #32)", function(test
 
 Tinytest.add("setDefaultPersistent should not override an existing persisted value", function(test) {
   var dictName = Random.id();
-  amplify.store(dictName + 'foo', "awesome");
+  localStorage.setItem(dictName + 'foo', "awesome");
 
   var TestSession = new PersistentSession(dictName);
 
@@ -256,7 +256,7 @@ Tinytest.add("setDefaultPersistent should not override an existing persisted val
 
 Tinytest.add("equals works", function(test) {
   var dictName = Random.id();
-  amplify.store(dictName + 'foo', "awesome");
+  localStorage.setItem(dictName + 'foo', "awesome");
 
   var TestSession = new PersistentSession(dictName);
 
@@ -270,11 +270,11 @@ Tinytest.add("equals works", function(test) {
 Tinytest.add("all works", function(test) {
   var dictName = Random.id();
   // default the session with some data before creating it
-  amplify.store(dictName + 'foo', "awesome");
+  localStorage.setItem(dictName + 'foo', "awesome");
   // since we set foo, we'll also need it's key to be set to `set` is called
   // and it ends up in the `dict.keys`
-  amplify.store('__PSKEYS__' + dictName, ['foo']);
-  amplify.store('__PSDATAVERSION__' + dictName, 4);
+  localStorage.setItem('__PSKEYS__' + dictName, ['foo']);
+  localStorage.setItem('__PSDATAVERSION__' + dictName, 4);
 
   var TestSession = new PersistentSession(dictName);
 
@@ -311,11 +311,11 @@ Tinytest.add("updates from 3.x to 4.x", function(test) {
   localStorage['__amplify__' + dictName + 'foo4'] = '{"data":[],"expires":null}';
   localStorage['__amplify__' + dictName + 'bar4'] = '{"data":"noodol","expires":null}';
   localStorage['__amplify__' + dictName + 'obj4'] = '{"data":{"obj":"val"},"expires":null}';
-  amplify.store('__PSKEYS__' + dictName, ['foo', 'bar', 'obj', 'foo4', 'bar4', 'obj4']);
-  amplify.store('__PSDATAVERSION__' + dictName, 1);
+  localStorage.setItem('__PSKEYS__' + dictName, ['foo', 'bar', 'obj', 'foo4', 'bar4', 'obj4']);
+  localStorage.setItem('__PSDATAVERSION__' + dictName, 1);
 
   var TestSession = new PersistentSession(dictName);
-  test.equal(amplify.store('__PSDATAVERSION__' + dictName), 4);
+  test.equal(localStorage.setItem('__PSDATAVERSION__' + dictName), 4);
   test.equal(TestSession.get('foo'), []);
   test.equal(TestSession.get('bar'), "noodol");
   test.equal(TestSession.get('obj'), { obj: "val" });
