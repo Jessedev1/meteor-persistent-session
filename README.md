@@ -1,9 +1,9 @@
 Meteor version compatibility
 ============
-2.8.0  
-2.3.0  
-1.12.0  
-0.9.1  
+2.8.0
+2.3.0
+1.12.0
+0.9.1
 
 Purpose
 =======
@@ -18,7 +18,7 @@ not available.
 Installation
 ============
 ```
-meteor add hormiga:persistent-session
+meteor add jessedev:persistent-session
 ```
 **Note:** To use persistent-session, your project must have Session already installed. You can add Meteor's Session package by `meteor add session`.
 
@@ -144,6 +144,6 @@ To define the default type for session variables, set `persistent_session.defaul
 
 In any other case the `default_method` will fall back to `temporary`
 
-Original from:  
-https://github.com/okgrow/meteor-persistent-session  
-https://github.com/cult-of-coders/meteor-persistent-session  
+Original from:
+https://github.com/okgrow/meteor-persistent-session
+https://github.com/cult-of-coders/meteor-persistent-session
