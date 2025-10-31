@@ -11,7 +11,7 @@ Package.onUse(function(api) {
 		'amplifyjs': '1.1.2-beta.2'
 	});
 
-	api.use(['jquery', 'tracker@1.3.4', 'reactive-dict@1.3.2', 'session@1.2.2', 'underscore@1.6.4', 'ejson@1.1.5']);
+	api.use(['tracker@1.3.4', 'reactive-dict@1.3.2', 'session@1.2.2', 'underscore@1.6.4', 'ejson@1.1.5']);
 	api.use('accounts-base@3.1.2', { weak: true });
 	api.addFiles([
 		'lib/amplify.store.min.js',
